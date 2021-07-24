@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app-docker
+  namespace: default
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app-docker
+  template:
+    metadata:
+      labels:
+        app: app-docker
+    spec:
+      containers:
+      - name: app-docker
+        image: python-docker
+        imagePullPolicy: Never
