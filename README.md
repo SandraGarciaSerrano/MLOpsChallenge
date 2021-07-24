@@ -46,4 +46,5 @@ In order to deploy the service, it is needed to run:
 kubectl apply -f service-app.yaml
 ```
 After creating the service, the application can be accessed through http://localhost:30000 and it would return the following:
+
 ![Test Image 1](output.PNG)
